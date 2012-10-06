@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <RootNamespace>GSTPluginExample</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_debug</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OSSBUILD_GSTREAMER_SDK_DIR)include;$(OSSBUILD_GSTREAMER_SDK_DIR)include\a52dec;$(OSSBUILD_GSTREAMER_SDK_DIR)include\atk-1.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\cairo;$(OSSBUILD_GSTREAMER_SDK_DIR)include\celt;$(OSSBUILD_GSTREAMER_SDK_DIR)include\curl;$(OSSBUILD_GSTREAMER_SDK_DIR)include\dvdcss;$(OSSBUILD_GSTREAMER_SDK_DIR)include\dvdnav;$(OSSBUILD_GSTREAMER_SDK_DIR)include\dvdread;$(OSSBUILD_GSTREAMER_SDK_DIR)include\fontconfig;$(OSSBUILD_GSTREAMER_SDK_DIR)include\freetype2;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gail-1.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\GL;$(OSSBUILD_GSTREAMER_SDK_DIR)include\glib-2.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gnutls;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gtk-2.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gtkgl-2.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\lame;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libavcodec;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libavdevice;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libavfilter;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libavformat;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libavutil;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libcroco-0.6;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libgsf-1;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libmms;$(OSSBUILD_GSTREAMER_SDK_DIR)include\liboil-0.3;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libpng14;$(OSSBUILD_GSTREAMER_SDK_DIR)include\librsvg-2;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libsoup-2.4;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libswscale;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libxml2;$(OSSBUILD_GSTREAMER_SDK_DIR)include\mpeg2dec;$(OSSBUILD_GSTREAMER_SDK_DIR)include\neon;$(OSSBUILD_GSTREAMER_SDK_DIR)include\nice;$(OSSBUILD_GSTREAMER_SDK_DIR)include\ogg;$(OSSBUILD_GSTREAMER_SDK_DIR)include\orc-0.4;$(OSSBUILD_GSTREAMER_SDK_DIR)include\pango-1.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\pixman-1;$(OSSBUILD_GSTREAMER_SDK_DIR)include\schroedinger-1.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\SDL;$(OSSBUILD_GSTREAMER_SDK_DIR)include\speex;$(OSSBUILD_GSTREAMER_SDK_DIR)include\stun;$(OSSBUILD_GSTREAMER_SDK_DIR)include\theora;$(OSSBUILD_GSTREAMER_SDK_DIR)include\vorbis;$(OSSBUILD_GSTREAMER_SDK_DIR)include\wavpack;$(OSSBUILD_GSTREAMER_SDK_DIR)include\atk-1.0\atk;$(OSSBUILD_GSTREAMER_SDK_DIR)include\freetype2\freetype;$(OSSBUILD_GSTREAMER_SDK_DIR)include\freetype2\freetype\config;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gail-1.0\gail;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gail-1.0\libgail-util;$(OSSBUILD_GSTREAMER_SDK_DIR)include\glib-2.0\gio;$(OSSBUILD_GSTREAMER_SDK_DIR)include\glib-2.0\glib;$(OSSBUILD_GSTREAMER_SDK_DIR)include\glib-2.0\gobject;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\app;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\audio;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\base;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\cdda;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\controller;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\dataprotocol;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\farsight;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\fft;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\gl;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\interfaces;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\net;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\netbuffer;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\pbutils;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\riff;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\rtp;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\rtsp;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\sdp;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\tag;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\video;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gtk-2.0\gdk;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gtk-2.0\gdk-pixbuf;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gtk-2.0\gtk;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gtkgl-2.0\gtkgl;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libcroco-0.6\libcroco;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libgsf-1\gsf;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libgsf-1\gsf-gnome;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libgsf-1\gsf-win32;$(OSSBUILD_GSTREAMER_SDK_DIR)include\liboil-0.3\liboil;$(OSSBUILD_GSTREAMER_SDK_DIR)include\librsvg-2\librsvg;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libsoup-2.4\libsoup;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libxml2\libxml;$(OSSBUILD_GSTREAMER_SDK_DIR)include\orc-0.4\orc;$(OSSBUILD_GSTREAMER_SDK_DIR)include\orc-0.4\orc-float;$(OSSBUILD_GSTREAMER_SDK_DIR)include\orc-0.4\orc-test;$(OSSBUILD_GSTREAMER_SDK_DIR)include\pango-1.0\pango;$(OSSBUILD_GSTREAMER_SDK_DIR)include\schroedinger-1.0\schroedinger;$(OSSBUILD_GSTREAMER_SDK_DIR)include\stun\usages;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OSSBUILD_GSTREAMER_SDK_DIR)lib;$(LibraryPath)</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OSSBUILD_GSTREAMER_SDK_DIR)include;$(OSSBUILD_GSTREAMER_SDK_DIR)include\a52dec;$(OSSBUILD_GSTREAMER_SDK_DIR)include\atk-1.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\cairo;$(OSSBUILD_GSTREAMER_SDK_DIR)include\celt;$(OSSBUILD_GSTREAMER_SDK_DIR)include\curl;$(OSSBUILD_GSTREAMER_SDK_DIR)include\dvdcss;$(OSSBUILD_GSTREAMER_SDK_DIR)include\dvdnav;$(OSSBUILD_GSTREAMER_SDK_DIR)include\dvdread;$(OSSBUILD_GSTREAMER_SDK_DIR)include\fontconfig;$(OSSBUILD_GSTREAMER_SDK_DIR)include\freetype2;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gail-1.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\GL;$(OSSBUILD_GSTREAMER_SDK_DIR)include\glib-2.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gnutls;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gtk-2.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gtkgl-2.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\lame;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libavcodec;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libavdevice;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libavfilter;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libavformat;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libavutil;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libcroco-0.6;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libgsf-1;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libmms;$(OSSBUILD_GSTREAMER_SDK_DIR)include\liboil-0.3;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libpng14;$(OSSBUILD_GSTREAMER_SDK_DIR)include\librsvg-2;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libsoup-2.4;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libswscale;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libxml2;$(OSSBUILD_GSTREAMER_SDK_DIR)include\mpeg2dec;$(OSSBUILD_GSTREAMER_SDK_DIR)include\neon;$(OSSBUILD_GSTREAMER_SDK_DIR)include\nice;$(OSSBUILD_GSTREAMER_SDK_DIR)include\ogg;$(OSSBUILD_GSTREAMER_SDK_DIR)include\orc-0.4;$(OSSBUILD_GSTREAMER_SDK_DIR)include\pango-1.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\pixman-1;$(OSSBUILD_GSTREAMER_SDK_DIR)include\schroedinger-1.0;$(OSSBUILD_GSTREAMER_SDK_DIR)include\SDL;$(OSSBUILD_GSTREAMER_SDK_DIR)include\speex;$(OSSBUILD_GSTREAMER_SDK_DIR)include\stun;$(OSSBUILD_GSTREAMER_SDK_DIR)include\theora;$(OSSBUILD_GSTREAMER_SDK_DIR)include\vorbis;$(OSSBUILD_GSTREAMER_SDK_DIR)include\wavpack;$(OSSBUILD_GSTREAMER_SDK_DIR)include\atk-1.0\atk;$(OSSBUILD_GSTREAMER_SDK_DIR)include\freetype2\freetype;$(OSSBUILD_GSTREAMER_SDK_DIR)include\freetype2\freetype\config;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gail-1.0\gail;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gail-1.0\libgail-util;$(OSSBUILD_GSTREAMER_SDK_DIR)include\glib-2.0\gio;$(OSSBUILD_GSTREAMER_SDK_DIR)include\glib-2.0\glib;$(OSSBUILD_GSTREAMER_SDK_DIR)include\glib-2.0\gobject;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\app;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\audio;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\base;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\cdda;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\controller;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\dataprotocol;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\farsight;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\fft;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\gl;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\interfaces;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\net;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\netbuffer;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\pbutils;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\riff;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\rtp;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\rtsp;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\sdp;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\tag;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gstreamer-0.10\gst\video;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gtk-2.0\gdk;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gtk-2.0\gdk-pixbuf;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gtk-2.0\gtk;$(OSSBUILD_GSTREAMER_SDK_DIR)include\gtkgl-2.0\gtkgl;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libcroco-0.6\libcroco;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libgsf-1\gsf;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libgsf-1\gsf-gnome;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libgsf-1\gsf-win32;$(OSSBUILD_GSTREAMER_SDK_DIR)include\liboil-0.3\liboil;$(OSSBUILD_GSTREAMER_SDK_DIR)include\librsvg-2\librsvg;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libsoup-2.4\libsoup;$(OSSBUILD_GSTREAMER_SDK_DIR)include\libxml2\libxml;$(OSSBUILD_GSTREAMER_SDK_DIR)include\orc-0.4\orc;$(OSSBUILD_GSTREAMER_SDK_DIR)include\orc-0.4\orc-float;$(OSSBUILD_GSTREAMER_SDK_DIR)include\orc-0.4\orc-test;$(OSSBUILD_GSTREAMER_SDK_DIR)include\pango-1.0\pango;$(OSSBUILD_GSTREAMER_SDK_DIR)include\schroedinger-1.0\schroedinger;$(OSSBUILD_GSTREAMER_SDK_DIR)include\stun\usages;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OSSBUILD_GSTREAMER_SDK_DIR)lib;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\libs\openFrameworks;..\..\..\libs\openFrameworks\graphics;..\..\..\libs\openFrameworks\app;..\..\..\libs\openFrameworks\sound;..\..\..\libs\openFrameworks\utils;..\..\..\libs\openFrameworks\communication;..\..\..\libs\openFrameworks\video;..\..\..\libs\openFrameworks\math;..\..\..\libs\openFrameworks\types;..\..\..\libs\openFrameworks\events;..\..\..\libs\glut\include;..\..\..\libs\rtAudio\include;..\..\..\libs\quicktime\include;..\..\..\libs\freetype\include;..\..\..\libs\freetype\include\freetype2;..\..\..\libs\freeImage\include;..\..\..\libs\fmodex\include;..\..\..\libs\videoInput\include;..\..\..\libs\glew\include\;..\..\..\libs\glu\include;..\..\..\libs\poco\include;..\..\..\libs\openFrameworks\gl;..\..\..\libs\openFrameworks\3d;..\..\..\libs\tess2\include;..\..\..\libs\cairo\include\cairo;..\..\..\addons;..\..\..\addons\ofxGstStandaloneVideo\src;..\..\..\addons\ofxBezel\src;..\..\..\addons\ofxOsc;..\..\..\addons\ofxOsc\libs;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;..\..\..\addons\ofxComposition\src;..\..\..\addons\ofxTitles;..\..\..\addons\ofxTitles\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;POCO_STATIC;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>atk-1.0.lib;avcodec-lgpl.lib;avdevice-lgpl.lib;avfilter-lgpl.lib;avformat-lgpl.lib;avutil-lgpl.lib;bz2.lib;cairo.lib;celt0.lib;croco-0.6.lib;expat.lib;flac.lib;fontconfig.lib;freetype.lib;gailutil.lib;gcrypt.lib;gdk-win32-2.0.lib;gdk_pixbuf-2.0.lib;gio-2.0.lib;glew32.lib;glib-2.0.lib;gmodule-2.0.lib;gnutls-extra.lib;gnutls-openssl.lib;gnutls.lib;gobject-2.0.lib;gpg-error.lib;gsf-1.lib;gsf-win32-1.lib;gstapp-0.10.lib;gstaudio-0.10.lib;gstbase-0.10.lib;gstbasevideo-0.10.lib;gstcdda-0.10.lib;gstcontroller-0.10.lib;gstdataprotocol-0.10.lib;gstfarsight-0.10.lib;gstfft-0.10.lib;gstgl-0.10.lib;gstinterfaces-0.10.lib;gstnet-0.10.lib;gstnetbuffer-0.10.lib;gstpbutils-0.10.lib;gstphotography-0.10.lib;gstreamer-0.10.lib;gstriff-0.10.lib;gstrtp-0.10.lib;gstrtsp-0.10.lib;gstsdp-0.10.lib;gstsignalprocessor-0.10.lib;gsttag-0.10.lib;gstvideo-0.10.lib;gthread-2.0.lib;gtk-win32-2.0.lib;gtkgl-2.0.lib;iconv.lib;intl.lib;jpeg.lib;mms.lib;mp3lame.lib;neon.lib;nice.lib;ogg.lib;oil-0.3.lib;openjpeg.lib;orc-0.4.lib;orc-float-0.4.lib;orc-test-0.4.lib;pango-1.0.lib;pangocairo-1.0.lib;pangoft2-1.0.lib;pangowin32-1.0.lib;pixman.lib;png14.lib;pthreadGC2.lib;rsvg-2.lib;schroedinger-1.0.lib;sdl.lib;soup-2.4.lib;speex.lib;speexdsp.lib;swscale-lgpl.lib;tasn1.lib;theora.lib;theoradec.lib;theoraenc.lib;tiff.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;wavpack.lib;xml2.lib;z.lib;gtkgl-2.0.lib;openframeworksLibDebug.lib;cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;Vfw32.lib;comctl32.lib;glut32.lib;rtAudioD.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;PocoFoundationmdd.lib;PocoNetmdd.lib;PocoUtilmdd.lib;PocoXMLmdd.lib;Ws2_32.lib;tess2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\libs\glut\lib\vs2010;..\..\..\libs\rtAudio\lib\vs2010;..\..\..\libs\FreeImage\lib\vs2010;..\..\..\libs\freetype\lib\vs2010;..\..\..\libs\quicktime\lib\vs2010;..\..\..\libs\fmodex\lib\vs2010;..\..\..\libs\videoInput\lib\vs2010;..\..\..\libs\cairo\lib\vs2010;..\..\..\libs\glew\lib\vs2010;..\..\..\libs\glu\lib\vs2010;..\..\..\libs\Poco\lib\vs2010;..\..\..\libs\openFrameworksCompiled\lib\vs2010;..\..\..\libs\tess2\lib\vs2010;..\..\..\addons\ofxOsc\libs\oscpack\lib\win32;$(OSSBUILD_GSTREAMER_SDK_DIR)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib; LIBC.lib; LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName)_debugInfo.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>adding DLLs and creating data folder</Message>
+      <Command>xcopy /e /i /y "$(ProjectDir)\..\..\..\export\vs2010\*.dll" "$(ProjectDir)\bin"
+
+if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
+
+
+xcopy /e /i /y "$(ProjectDir)\..\..\..\export\vs2010\*.dll" "$(ProjectDir)\bin"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;..\..\..\libs\openFrameworks;..\..\..\libs\openFrameworks\graphics;..\..\..\libs\openFrameworks\app;..\..\..\libs\openFrameworks\sound;..\..\..\libs\openFrameworks\utils;..\..\..\libs\openFrameworks\communication;..\..\..\libs\openFrameworks\video;..\..\..\libs\openFrameworks\math;..\..\..\libs\openFrameworks\types;..\..\..\libs\openFrameworks\events;..\..\..\libs\glut\include;..\..\..\libs\rtAudio\include;..\..\..\libs\quicktime\include;..\..\..\libs\freetype\include;..\..\..\libs\freetype\include\freetype2;..\..\..\libs\freeImage\include;..\..\..\libs\fmodex\include;..\..\..\libs\videoInput\include;..\..\..\libs\glew\include\;..\..\..\libs\glu\include;..\..\..\libs\poco\include;..\..\..\libs\openFrameworks\gl;..\..\..\libs\openFrameworks\3d;..\..\..\libs\tess2\include;..\..\..\libs\cairo\include\cairo;..\..\..\addons;..\..\..\addons\hfGstVideo\src;..\..\..\addons\ofxBezel\src;..\..\..\addons\ofxOsc;..\..\..\addons\ofxOsc\libs;..\..\..\addons\ofxOsc\src;..\..\..\addons\ofxOsc\libs\oscpack;..\..\..\addons\ofxOsc\libs\oscpack\src;..\..\..\addons\ofxOsc\libs\oscpack\src\ip;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\posix;..\..\..\addons\ofxOsc\libs\oscpack\src\ip\win32;..\..\..\addons\ofxOsc\libs\oscpack\src\osc;..\..\..\addons\ofxComposition\src;..\..\..\addons\ofxTitles;..\..\..\addons\ofxTitles\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;POCO_STATIC;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>atk-1.0.lib;avcodec-lgpl.lib;avdevice-lgpl.lib;avfilter-lgpl.lib;avformat-lgpl.lib;avutil-lgpl.lib;bz2.lib;cairo.lib;celt0.lib;croco-0.6.lib;expat.lib;flac.lib;fontconfig.lib;freetype.lib;gailutil.lib;gcrypt.lib;gdk-win32-2.0.lib;gdk_pixbuf-2.0.lib;gio-2.0.lib;glew32.lib;glib-2.0.lib;gmodule-2.0.lib;gnutls-extra.lib;gnutls-openssl.lib;gnutls.lib;gobject-2.0.lib;gpg-error.lib;gsf-1.lib;gsf-win32-1.lib;gstapp-0.10.lib;gstaudio-0.10.lib;gstbase-0.10.lib;gstbasevideo-0.10.lib;gstcdda-0.10.lib;gstcontroller-0.10.lib;gstdataprotocol-0.10.lib;gstfarsight-0.10.lib;gstfft-0.10.lib;gstgl-0.10.lib;gstinterfaces-0.10.lib;gstnet-0.10.lib;gstnetbuffer-0.10.lib;gstpbutils-0.10.lib;gstphotography-0.10.lib;gstreamer-0.10.lib;gstriff-0.10.lib;gstrtp-0.10.lib;gstrtsp-0.10.lib;gstsdp-0.10.lib;gstsignalprocessor-0.10.lib;gsttag-0.10.lib;gstvideo-0.10.lib;gthread-2.0.lib;gtk-win32-2.0.lib;gtkgl-2.0.lib;iconv.lib;intl.lib;jpeg.lib;mms.lib;mp3lame.lib;neon.lib;nice.lib;ogg.lib;oil-0.3.lib;openjpeg.lib;orc-0.4.lib;orc-float-0.4.lib;orc-test-0.4.lib;pango-1.0.lib;pangocairo-1.0.lib;pangoft2-1.0.lib;pangowin32-1.0.lib;pixman.lib;png14.lib;pthreadGC2.lib;rsvg-2.lib;schroedinger-1.0.lib;sdl.lib;soup-2.4.lib;speex.lib;speexdsp.lib;swscale-lgpl.lib;tasn1.lib;theora.lib;theoradec.lib;theoraenc.lib;tiff.lib;vorbis.lib;vorbisenc.lib;vorbisfile.lib;wavpack.lib;xml2.lib;z.lib;gtk-win32-2.0.lib;glib-2.0.lib;openframeworksLib.lib;cairo-static.lib;pixman-1.lib;msimg32.lib;OpenGL32.lib;GLu32.lib;kernel32.lib;setupapi.lib;glut32.lib;rtAudio.lib;videoInput.lib;libfreetype.lib;FreeImage.lib;qtmlClient.lib;dsound.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;glew32s.lib;fmodex_vc.lib;glu32.lib;PocoFoundationmd.lib;PocoNetmd.lib;PocoUtilmd.lib;PocoXMLmd.lib;tess2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\libs\glut\lib\vs2010;..\..\..\libs\rtAudio\lib\vs2010;..\..\..\libs\FreeImage\lib\vs2010;..\..\..\libs\freetype\lib\vs2010;..\..\..\libs\quicktime\lib\vs2010;..\..\..\libs\fmodex\lib\vs2010;..\..\..\libs\videoInput\lib\vs2010;..\..\..\libs\cairo\lib\vs2010;..\..\..\libs\glew\lib\vs2010;..\..\..\libs\glu\lib\vs2010;..\..\..\libs\Poco\lib\vs2010;..\..\..\libs\openFrameworksCompiled\lib\vs2010;..\..\..\libs\tess2\lib\vs2010;..\..\..\addons\ofxOsc\libs\oscpack\lib\win32;$(OSSBUILD_GSTREAMER_SDK_DIR)\lib\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib; LIBC.lib; LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Message>adding DLLs and creating data folder</Message>
+      <Command>xcopy /e /i /y "$(ProjectDir)\..\..\..\export\vs2010\*.dll" "$(ProjectDir)\bin"
+
+if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
+
+
+xcopy /e /i /y "$(ProjectDir)\..\..\..\export\vs2010\*.dll" "$(ProjectDir)\bin"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\addons\ofxGstStandaloneVideo\src\ofxGstStandaloneUtils.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGstStandaloneVideo\src\ofxGstStandaloneVideoGrabber.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxGstStandaloneVideo\src\ofxGstStandaloneVideoPlayer.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\testApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\addons\ofxGstStandaloneVideo\src\ofxGstStandaloneUtils.h" />
+    <ClInclude Include="..\..\..\addons\ofxGstStandaloneVideo\src\ofxGstStandaloneVideoGrabber.h" />
+    <ClInclude Include="..\..\..\addons\ofxGstStandaloneVideo\src\ofxGstStandaloneVideoPlayer.h" />
+    <ClInclude Include="src\testApp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs2010\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
